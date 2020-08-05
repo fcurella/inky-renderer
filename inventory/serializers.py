@@ -6,4 +6,4 @@ from . import models
 class ScreenSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Screen
-        fields = ['id', 'image']
+        fields = ['id', 'name', 'image']

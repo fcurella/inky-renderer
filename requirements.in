@@ -2,5 +2,4 @@ django
 django-extensions
 djangorestframework
 pillow
-watchdog
 inky
