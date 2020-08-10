@@ -111,4 +111,5 @@ ENV/
 docs/resources/_gen/
 
 keys/
-.DS_STORE
+.DS_Store
+._*
