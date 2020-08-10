@@ -15,7 +15,7 @@
 (function() {
     'use strict';
 
-    const apiURL = "http://raspberrypi.local:8000/api/screens/"
+    const apiURL = "http://raspberrypi.local/api/screens/"
     const offCallId = 5;
     const onCallId = 4;
 
