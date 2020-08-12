@@ -7,6 +7,7 @@
 // @match        https://meet.google.com/*
 // @grant unsafeWindow
 // @grant window.close
+// @grant window.onDOMContentLoaded
 // @grant window.onbeforeunload
 // @grant GM_xmlhttpRequest
 // @connect raspberrypi.local
@@ -28,7 +29,11 @@
         )
     );
 
-    window.addEventListener('beforeunload', () => show(offCallId))
+    window.addEventListener('DOMContentLoaded', () => show(onCallId));
+    window.addEventListener('beforeunload', (e) => {
+        show(offCallId);
+        e.returnValue = '';
+    });
 
     show(onCallId);
 
