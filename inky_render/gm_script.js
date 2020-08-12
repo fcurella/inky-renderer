@@ -32,7 +32,7 @@
     window.addEventListener('DOMContentLoaded', () => show(onCallId));
     window.addEventListener('beforeunload', (e) => {
         show(offCallId);
-        e.returnValue = '';
+        delete e.returnValue;
     });
 
     show(onCallId);
